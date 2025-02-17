@@ -1,0 +1,497 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+
+/*--------------------------------------------Header Container--------------------------------------------*/
+.image-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.image-container img{
+    width:100%;
+    height: 416px;
+    object-fit: cover;
+    transform: scale(1.1);
+}
+
+/*---------------------Nav Container-----------------------*/
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+.nav-container{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-container-row a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+
+nav ul{
+    display: flex;
+}
+
+
+ul a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 6px;
+    margin-right: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/*---------------------Header Body Container-----------------------*/
+.header-body{
+   width: 100%;
+   position: absolute;
+   top: 100px;
+   text-align: center;
+}
+
+
+.header-body-container{
+    color: #FFFFFF;
+    font-size: 36px;
+}
+
+
+.header-body-container img{
+    width: 290px;
+}
+
+
+.search-container{
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: auto;
+    max-width: 760px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+
+
+.search-location{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 5px 0px 5px;
+}
+
+
+.search-location input{
+    border: none;
+    font-size: 14px;
+    width: 190px;
+    outline: none;
+}
+
+
+.line{
+    height: 20px;
+    width: 0px;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    border-left: 1px solid rgb(203, 201, 201);
+   
+}
+
+.search-item{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.search-item input{
+    border: none;
+    font-size: 14px;
+    width: 460px;
+    padding: 5px 10px;
+    outline: none;
+}
+
+/*--------------------------------------------Main Container--------------------------------------------*/
+/*---------------------Image Gallery Container-----------------------*/
+.image-gallery{
+    width: 550px;
+    height: 240px;
+    margin:40px;
+    margin-left: 123px;
+    border: 0.1px solid rgb(232, 232, 232);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.image-gallery img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
+}
+
+
+.image-title{
+   padding-left: 30px; 
+}
+
+
+.image-title span{
+    color: rgb(56,56,56);
+    font-size: 18px;
+}
+
+
+.image-title p{
+    color: rgb(79,79,79);
+    font-size: 16px
+}
+
+
+.image-gallery:hover {
+    transform: scale(1.05);
+    transition: transform 0.4s;
+}
+
+/*---------------------Locality Container-----------------------*/
+.localities{
+    margin:80px;
+    margin-left: 123px;
+}
+
+
+.localities h3{
+    color: rgb(54,54,54);
+    font-size: 37px;
+    font-weight: 400;
+}
+
+
+.localities-box{
+    width: 360px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.1px solid rgb(232, 232, 232);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: (28, 28, 28, 0.08) 0px 1.42623px 2.85246px;
+}
+
+
+.localities-box:hover{
+    box-shadow: rgba(28, 28, 28, 0.08) 0px 4px 8px;
+}
+
+
+.localities-title{
+    color: rgb(54,54,54);
+    font-size: 20px;
+}
+
+
+.localities-box .places{
+    font-size: 16px;
+    padding-top: 6px;
+    color: rgb(79,79,79);
+}
+
+/*---------------------App Download Container-----------------------*/
+.app-container{
+    width: 100%;
+    margin-top: 110px;
+    background-color: #FFFBF7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px;
+}
+
+
+.app-image-container img{
+    height: 450px;
+}
+
+
+.app-download{
+   margin-bottom: 100px;
+}
+
+
+.app-download h2{
+    color: rgb(28, 28, 28);
+    font-weight: 500;
+    font-size: 45px;
+    margin-bottom: 0;
+}
+
+
+.link {
+    color: #363636;
+    line-height: 2.1rem;
+    padding: 0px 0px 15px;
+}
+
+
+.download{
+    color: rgb(156, 156, 156);
+    font-weight: 300;
+}
+
+
+.download-link {
+    display: flex;
+    justify-content: flex-start;
+    gap: 50px;
+    font-weight: 300;
+    margin: 0px 0px 20px;
+    color: rgb(28,28,28);
+}
+
+
+
+input[type="radio"]{
+    accent-color: rgb(239, 79, 95); 
+    transform: scale(1.3);
+}
+
+
+.email-type{
+    display: flex;
+    gap: 10px;
+}
+
+
+.email-type input{
+    font-size: 18px;
+    width: 290px;
+    padding: 12px 11px;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 6px;
+    outline: none;
+}
+
+
+.email-type button{
+    width: 140px;
+    padding: 12px;
+    background-color: rgb(239, 79, 95);
+    border:  solid rgb(239, 79, 95);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.email-type button:hover{
+    background-color: rgb(242,60,78);
+}
+
+
+.download-options{
+    display: flex;
+    gap: 16px;
+}
+
+
+.download-options img{
+    width: 140px;
+    cursor: pointer;
+}
+
+/*---------------------Explore Container-----------------------*/
+.explore-container{
+    background-color: #FCFCFC;
+    padding-left: 123px;
+    padding-top: 50px;
+}
+
+
+.explore-container h3{
+    margin-top: 0;
+    color: rgb(54, 54, 54);
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.explore-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding-bottom: 50px;
+}
+
+.explore-options{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: 400;
+    background-color: rgb(255, 255, 255);;
+    color: rgb(28, 28, 28);
+    width: 90%;
+    padding: 0px 18px 0px 18px;
+    border: 0.1px solid rgb(232, 232, 232);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/*--------------------------------------------Footer Container--------------------------------------------*/
+footer{
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
+
+.footer-container{
+    width: 91%;
+    padding-left: 123px;
+    padding-top: 55px; 
+}
+
+/*---------------------Footer Top Container-----------------------*/
+.top-section{
+    display: flex;
+    justify-content: space-between;    
+}
+
+
+.top-section img{
+    height: 28px;
+    width: 130px; 
+}
+
+
+.dropdown{
+    display: flex;
+    gap: 20px;
+}
+
+
+.dropdown-row{
+    display: flex;
+    align-items: center;
+    color: rgb(28, 28, 28);
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 6px;   
+    cursor: pointer;
+    padding: 18px 7px;
+    min-width: 100px;
+    width: max-content;
+    height: 30px;
+    font-size: 16px;
+    gap: 10px;
+}
+
+
+.dropdown-row img{
+    width: 20px;
+    height: 15px;
+}
+
+/*---------------------Footer Middle Container-----------------------*/
+.middle-section{
+   width: 95%;
+}
+
+
+.zomato-list{
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+
+.zomato-row-list h6{
+    font-weight: 500;
+    font-size: 15px;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-bottom: 9px;
+}
+
+
+.lists a{
+    text-decoration: none;
+    color: #696969;
+    margin: 5px 0px;
+    line-height: 1.8rem;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.lists a:hover{
+    color:black ;
+}
+
+
+.lists svg{
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+
+.image-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.image-list img{
+    width: 140px;
+    cursor: pointer;
+}
+
+/*---------------------Footer Last Container-----------------------*/
+.last-section hr{
+    margin-top: 3rem;
+    border-width: 1px 0px 0px;;
+    border-color: rgb(207, 207, 207);
+    border-top-style: solid;
+    
+}
+
+.last-section p{
+    padding: 10px 0px 45px 0px;
+    font-size: 13px;
+    line-height: 1.6rem;
+    color:rgb(79, 79, 79);
+    margin-bottom: 0;
+}
+
+
